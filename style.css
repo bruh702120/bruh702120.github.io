@@ -278,3 +278,45 @@ body {
     height: 100%;
     object-fit: cover;
 }
+
+
+
+/* --- CSS THÊM VÀO ĐỂ TỐI ƯU CHO ĐIỆN THOẠI IPHONE --- */
+@media screen and (max-width: 768px) {
+    /* Thu nhỏ 2 ảnh ở góc để không che mất bức thư và bánh kem */
+    .image-1, .image-2 {
+        width: 100px;
+        height: 100px;
+        top: 10px;
+    }
+    
+    .image-1 {
+        left: 10px;
+    }
+    
+    .image-2 {
+        right: 10px;
+    }
+
+    /* Đảm bảo đế bánh không bị rộng hơn màn hình của các iPhone đời cũ (VD: iPhone SE rộng 320px) */
+    .holder {
+        width: 90vw;
+        max-width: 320px;
+    }
+
+    /* Thu nhỏ text một chút xíu nếu thấy quá chật */
+    .letter p {
+        font-size: 18px; 
+    }
+}
+
+/* Nếu màn hình quá quá nhỏ (như iPhone SE đứng), có thể thu nhỏ thiệp lại một chút nữa */
+@media screen and (max-width: 380px) {
+    .wrapper {
+        transform: scale(0.9);
+    }
+    .the-cake {
+        transform: scale(0.9);
+        bottom: 30px;
+    }
+}
