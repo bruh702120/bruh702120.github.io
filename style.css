@@ -266,18 +266,7 @@ body {
     object-fit: cover;
 }
 
-.image-3 {
-    position: absolute; 
-    top: 20px;          
-    width: 100px;
-    height: 100px;
-}
 
-.image-3 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 
 
